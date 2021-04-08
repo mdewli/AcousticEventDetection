@@ -3,9 +3,10 @@ Classifying 10 differrent urban sounds: 'car_horn', 'dog_bark', 'gun_shot', 'str
 
 Data can be downloaded/accessed from here: https://www.kaggle.com/chrisfilo/urbansound8k
 
-We extracted audio features : mfccs ( mel cepstral coeeficienst, stfts (short time fourier transform) and melpectrograms for each audio file). However, we used
-mfccs to train the model. The input features were then converted to a 3d tensor by adding one more axis to 2d input, to mimic the shape of an RGB image because we were working with convolutional
-neural networks generally used to classify image data. 
+We extracted audio features : mfccs ( mel cepstral coeeficients, stfts (short time fourier transform) and melpectrograms for each audio file). However, we used
+mfccs to train the model. The 2d input features were then converted to a 3d tensor by adding one more axis to input tensor, to mimic the shape of an RGB image because we were working with convolutional neural networks generally used to classify image data which is 3d (RGB).
+
+We were able achieve an accuracy of 92 percent.
 
 This dataset contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes: air_conditioner, car_horn, children_playing, dog_bark, drilling, enginge_idling, gun_shot, jackhammer, siren, and street_music. The classes are drawn from the urban sound taxonomy. For a detailed description of the dataset and how it was compiled please refer to our paper.
 All excerpts are taken from field recordings uploaded to www.freesound.org. The files are pre-sorted into ten folds (folders named fold1-fold10) to help in the reproduction of and comparison with the automatic classification results reported in the article above.
