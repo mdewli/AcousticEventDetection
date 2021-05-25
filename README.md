@@ -1,4 +1,4 @@
-# UrbanSoundClassification
+# Acoustic Event Detection
 Classifying 10 differrent urban sounds: 'car_horn', 'dog_bark', 'gun_shot', 'street_music', 'siren', 'air_conditioner', 'jackhammer', 'engine_idling', 'children_playing', 'drilling', using covolution neural networks
 
 Data can be downloaded/accessed from here: https://www.kaggle.com/chrisfilo/urbansound8k
